@@ -10,5 +10,4 @@ Spring Bot
 Maven
 Hibernate
 Possible use:
-PHP
 HTML + CSS
