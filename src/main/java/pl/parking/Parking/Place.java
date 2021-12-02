@@ -4,9 +4,17 @@ package pl.parking.Parking;
 
 public class Place {
 
-    private String id;
-    private int number;
+    private final String id;
+    private final int number;
     private Type type;
+
+
+
+    public Place(String id , int number, Type type) {
+        this.id = id;
+        this.number = number;
+        this.type = type;
+    }
 
 
     public String getId() {
@@ -21,18 +29,10 @@ public class Place {
         return type;
     }
 
-    public void setid (String id) {
-        this.id = id;
-    }
-    public void setNumber(int number) {
-        this.number = number;
-    }
-    public void setType(Type type) {
-        this.type = type;
-    }
-
     public static enum Type{
-        State, IsReserved
+        FREE, IsReserved;
+
+
     }
 
 }
